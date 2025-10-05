@@ -9,7 +9,7 @@
 <!-- Device Sources -->
 <project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="AliHasan" revision="15" />
 <project name="proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" remote="AliHasan" revision="15" />
-<project name="android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="AliHasan" revision="15" />
+<project name="android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="AliHasan" revision="15-patchdtbs" />
 
 
 <!-- LOS Hardware Stuff -->
@@ -18,7 +18,7 @@
 <project name="android_hardware_qcom-caf_common" path="hardware/qcom-caf/common" remote="AspectPower" revision="lineage-23.0" />
 
 <!-- SE-Policy Stuff -->
-<project name="android_device_qcom_sepolicy_vndr_sm6225" path="device/qcom/sepolicy_vndr/sm6225" remote="tapas" revision="sixteen" />
+<project name="android_device_qcom_sepolicy_vndr_sm6225" path="device/qcom/sepolicy_vndr" remote="tapas" revision="sixteen" />
 <project name="android_device_xiaomi_sepolicy" path="device/xiaomi/sepolicy" remote="AspectPower" revision="lineage-23.0" />
 
 
