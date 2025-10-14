@@ -4,18 +4,20 @@
 <remote name="AliHasan" fetch="https://github.com/AliHasan7671" />
 <remote name="tapas" fetch="https://github.com/rn124g-development" />
 <remote name="AspectPower" fetch="https://github.com/BaranAspect-Development"/>
+<remote name="Masood" fetch="https://github.com/Masood-J" />
+
 
 
 <!-- Device Sources -->
-<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="AliHasan" revision="15" />
-<project name="proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" remote="AliHasan" revision="15" />
-<project name="android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="AliHasan" revision="15-patchdtbs" />
+<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="Masood" revision="14" />
+<project name="proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" remote="AliHasan" revision="14" />
+<project name="android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="AliHasan" revision="14" />
 
 
 <!-- LOS Hardware Stuff -->
 <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="AspectPower" revision="lineage-23.0" />
 <remove-project path="hardware/qcom-caf/common" />
-<project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="tapas" >
+<project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="tapas" revision="14" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->
@@ -60,7 +62,5 @@
 <project path="hardware/qcom-caf/sm6225/display" name="android_hardware_qcom-caf_sm6225_display" remote="tapas" revision="sixteen" />
 <project path="hardware/qcom-caf/sm6225/media" name="android_hardware_qcom-caf_sm6225_media" remote="tapas" revision="sixteen" />
 
-<!-- Dolby Atmos -->
-<project path="hardware/dolby" name="android_hardware_dolby" remote="AspectPower" revision="bka" />
 
 </manifest>
