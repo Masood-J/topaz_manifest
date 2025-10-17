@@ -15,7 +15,7 @@
 
 
 <!-- LOS Hardware Stuff -->
-<project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="Masood" revision="14.0" />
+<project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="AspectPower" revision="lineage-23.0" />
 <remove-project path="hardware/qcom-caf/common" />
 <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="Masood" revision="16" >
     <!-- add guard for AOSP hardware/qcom dir -->
